@@ -1,0 +1,144 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url(https://imageio.forbes.com/specials-images/imageserve/63864fb5b160df8f93a067dc/Restaurant/960x0.jpg?height=474&width=711&fit=bounds);
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 100px 0;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    
+}
+
+
+
+/* About Section */
+.about {
+    background-color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Menu Section */
+.menu {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 50px 0;
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-item {
+    margin: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.menu-item img {
+    width: 100%;
+    height: auto;
+}
+
+
+@media screen and (max-width: 768px) {
+    .menu {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .menu {
+        grid-template-columns: 1fr; /* Single column on mobile phones */
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.contact p {
+    margin-bottom: 10px;
+}
+
+.contact form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact label,
+.contact input,
+.contact textarea,
+.contact button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.contact button {
+    background-color: #f4f4f4;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #ddd;
+}
+
+/* Responsive media queries for contact section */
+@media screen and (min-width: 768px) {
+    .contact {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .contact form {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .contact label,
+    .contact input,
+    .contact textarea,
+    .contact button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
